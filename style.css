@@ -1,0 +1,92 @@
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+body{
+	background-color: hsl(0, 0%, 95%);
+}
+.cardContainer{
+	display: flex;
+	margin: 6rem 19rem;
+}
+/*card styling*/
+.cardWrapper{
+	padding:3rem;
+}
+.sedan{
+	background-color: hsl(31, 77%, 52%);/*Bright orange*/
+	border-radius: 0.5rem 0 0 0.5rem;
+}
+.suv{
+	background-color: hsl(184, 100%, 22%);/*dark cyan*/
+}
+.luxury{
+	background-color: hsl(179, 100%, 13%);/*Very dark cyan*/
+	border-radius:0 0.5rem 0.5rem 0;
+}
+.cardText{
+	margin: 2rem 0 4rem 0;
+}
+.headerText{
+	margin: 1rem 0;
+	color: hsl(0, 0%, 95%);
+	font-family: 'Big Shoulders Display', cursive;
+}
+.bannerText{
+	color:hsla(0, 0%, 100%, 0.75);
+	font-size: 15px;
+}
+/*button styling*/
+.bannerText, button{
+	font-family: 'Lexend Deca', sans-serif;
+	font-size: 15px;
+}
+#one{
+	padding: 1rem;
+    border-radius: 2rem;
+	border:none;
+	color:hsl(31, 77%, 52%);
+}
+#two{
+	padding: 1rem;
+    border-radius: 2rem;
+	border:none;
+	color:hsl(184, 100%, 22%);
+}
+#three{
+	padding: 1rem;
+    border-radius: 2rem;
+	border:none;
+	color:hsl(179, 100%, 13%);
+}
+#one:hover, #two:hover, #three:hover{
+	color: hsl(0, 0%, 95%);
+	background-color: transparent;
+	border: 1px solid hsl(0, 0%, 95%);
+}
+/*footer styling*/
+.attribution {
+	font-size: 11px; 
+	text-align: center; 
+}
+.attribution a { 
+	color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width:375px) {
+	.cardContainer{
+		display: block;
+		margin:4rem 2rem;
+	}
+	.sedan{
+		border-radius: 0.5rem 0.5rem 0 0;
+	}
+	.luxury{
+		border-radius: 0 0 0.5rem 0.5rem;
+	}
+	.cardText{
+		margin: 2rem 0;
+	}
+	
+}
